@@ -23,3 +23,11 @@ more_movies = [
   more_movies.each do |movie|
     Movie.create!(movie)
   end
+
+  # personal movie
+  Movie.create!({
+      :title => 'Life is beautiful', 
+      :rating => 'A',
+      :release_date => '16-Apr-1997',
+    })
+
